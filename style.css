@@ -1,0 +1,200 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #6a11cb, #2575fc); /* Gradient colors */
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Animation for the background gradient */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Section with Full-Width Background Image */
+header {
+    width: 100%;
+    height: 400px; /* Adjust the height of the header */
+    background: url('https://primathon.in/blog/wp-content/uploads/2024/05/image-2-2.jpg') no-repeat center center; /* Replace 'header-background-image.jpg' with your background image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the left */
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-align: left;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+/* Content Section using Flexbox */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Text Content */
+.text-container {
+    flex: 1;
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Image Styling */
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.intro p,
+.about p,
+.skills ul {
+    font-size: 1.1em;
+    color: #f4f4f4;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 1.2em;
+    color: #f4f4f4;
+}
+
+/* Resume Section */
+#resume a {
+    font-size: 1.2em;
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact p {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff7e5f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-image {
+        max-width: 80%; /* Limit image width on small screens */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .header-content h1 {
+        font-size: 2.5em;
+    }
+
+    .header-content p {
+        font-size: 1.2em;
+    }
+}
